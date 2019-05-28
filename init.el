@@ -21,7 +21,7 @@ There are two things you can do about this warning:
 
 ;;; packages I want to install
 (defvar my-packages
-  '(projectile textile-mode clojure-mode cider paredit spacegray-theme rainbow-delimiters) 
+  '(projectile textile-mode clojure-mode cider paredit zenburn-theme rainbow-delimiters) 
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -45,8 +45,7 @@ There are two things you can do about this warning:
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
 
 ;;; theme setup
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'weyland-yutani t)
+(load-theme 'zenburn t)
 
 
 
